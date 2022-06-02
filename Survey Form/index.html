@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pet History Form</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <h1 id="title">Pet History Form</h1>
+        <p id="description">This form will capture the required informations for a dog daycare facility</p>
+        <form action="https://index.html" id="survey-form">
+        <fieldset>
+            <label id="name-label">Name<input type="text" id="name" required placeholder="first name"><input type="text" name="lastname" required placeholder="last name"></label>
+            <label id="email-label">Email<input type="email" id="email" required placeholder="email"></label>
+            <label>Dog's name<input type="text" name="dogsname" placeholder="dog's name"></label>
+            <label>Dog's age<input type="number" name="dogsage" placeholder="dog's age"></label>
+            <label id="number-label">Dog's weight<input type="number" id="number" min="0" max="20" placeholder="dog's weight"></label>
+            <label>Breed<input type="text" name="breed" placeholder="breed"></label>
+        </fieldset>
+        <fieldset>
+            <label>Is your dog afraid of any of the following?</label>
+            <label><input type="checkbox" name="thunder" class="inline" value="1">Thunderstorms</label>
+            <label><input type="checkbox" name="fireworks" class="inline" value="2">Fireworks</label>
+            <label><input type="checkbox" name="noises" class="inline" value="3">Most loud noises</label>
+            <label><input type="checkbox" name="wind" class="inline" value="4">Wind/Rain</label>
+            <label><input type="checkbox" name="none" class="inline" value="5">None</label>
+            <label>Which best describes your dog's energy level?</label>
+            <select name="energy" id="dropdown">
+                <option value="">(select one)</option>
+                <option value="1">Low</option>
+                <option value="2">Medium</option>
+                <option value="3">High</option>
+            </select>
+            <label>How does your dog show that he/she is happy?<textarea name="happy" rows="3" cols="30"></textarea></label>
+        </fieldset>
+        <fieldset>
+            <label>Has you dog ever stayed in a crate?</label>
+            <label><input type="radio" name="stayed-in" class="inline" value="yes">Yes</label>
+            <label><input type="radio" name="stayed-in" class="inline" value="no">No</label>
+
+            <label>Is you dog  safe in a crate?</label>
+            <label><input type="radio" name="safe-in" class="inline" value="yes">Yes</label>
+            <label><input type="radio" name="safe-in" class="inline" value="no">No</label>
+        </fieldset>
+        <fieldset>
+            <label>How would you describe your dog's play style?</label>
+            <select name="play-style">
+                <option value="">(select one)</option>
+                <option value="1">King of the hill</option>
+                <option value="2">Wrestle mania</option>
+                <option value="3">Likes to be chased</option>
+                <option value="4">Likes to chased others</option>
+                <option value="5">Shares toys/balls</option>
+                <option value="6">Tug of war</option>
+                <option value="7">Don't know</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <label>Please provide other comments or information about your dog that you feel might be helpful: <textarea name="helpful" rows="3" cols="30"></textarea></label>
+            <label>How did you hear about us?</label>
+            <label><input type="checkbox" name="search" class="inline" value="1">Internet search</label>
+            <label><input type="checkbox" name="facebook" class="inline" value="2">Facebook</label>
+            <label><input type="checkbox" name="instagram" class="inline" value="3">Instagram</label>
+            <label><input type="checkbox" name="vet" class="inline" value="4">From my Vet</label>
+            <label><input type="checkbox" name="friend" class="inline" value="5">From friend</label>
+            <p>Thank you for helping us understand your dog better!</p>
+        </fieldset>
+        <input type="submit" value="Submit" id="submit">
+    </form>
+    </body>
+</html>
